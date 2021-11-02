@@ -1,49 +1,165 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-header{
+
+/* header */
+.header{
     position: fixed;
-    z-index: 999;
+    z-index: 9;
 }
-#top{
+.header img{
     position: absolute;
-    top: 10px; left: 10px;
-}
-header .btnMenu{
-    position: absolute;
-    top: 10px; right: 10px;
-}
-.navAll{
+    top: 35px; left: 60px;
+    height: 38px;
 }
 
+/* nav */
+.nav-wrap{
+    position: absolute;
+    left: 1400px; top: 0;
+    background: rgb(0, 0, 0, 0.7);
+    width: 547px; height: 100vh;
+}
+.nav-wrap img{
+    position: absolute;
+    right: 100px;
+}
 
+.nav-wrap ul li a{
+    font: 36px 'Cafe24 Ssurround',sans-serif;
+}
+.nav-wrap ul li ul li a{
+    margin-left: 40px;
+    font: 30px 'Cafe24 Ssurround air',sans-serif;
+}
+.nav-wrap a{
+    color: #FFB300;
+}
+
+/* section1 */
 .section1{
 
 }
-#top{
-    top: 0; left: 0;
+.section1 .magLt{
+    position: relative;
+    width: 47%;
+    height: 100vh;
 }
+.section1 .magLt .title{
+    position: absolute;
+    top: 12%; left: 6%;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    width: 788px; height: 185px;
+}
+.section1 .magLt .title p:first-child{
+    display: inline;
+    font: 72px 'Gothic',sans-serif;
+}
+.section1 .magLt .title p:nth-child(2){
+    display: inline;
+    font: 72px 'Gothic',sans-serif;
+}
+.section1 .magLt .title p:last-child{
+    margin-top: 20px;
+    font: 36px 'Gothic',sans-serif;
+}
+
+.section1 .magLt div:last-child{
+    position: absolute;
+    top: 80%; left: 6%;
+    border-left: 6px solid #333;
+}
+.section1 .magLt div:last-child p{
+    margin-left: 15px;
+    font: 24px/34px 'Gothic',sans-serif;
+}
+
+.section1 .magazine{
+    position: absolute;
+    top: 75%; left: calc(50% - 10px);
+    height: 208px;
+}
+
 .section1 .magRt{
     position: absolute;
     top: 0; right: 0;
-    width: 901px; height: 100vh;
+    width: 47%; height: 100vh;
     background-color: #EAA0A0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .section1 .magRt h1{
-    font: 144px/144px 'jalnan',sans-serif;
+    font: 144px/220px 'jalnan',sans-serif;
     color: #FFB300;
-    text-align: center;
 }
 
 .section1 .magRt img{
-    width: 662px; height: 662px;
+    width: 70%;
     
 }
 
+/* section2 */
+.section2{
+    display: flex;
+    flex-direction: column;
+}
+.section2 img:nth-child(1){
+    width: 84px;
+    align-items: center;
+}
+.section2 div img{
+    width: 1769px;
+}
+
+/* section3 */
 .section3{
     background: url(./imgs/main3_bg.png) 0 0 no-repeat;
-} 
+}
+
+/* section4 */
+.section4{
+    position: relative;
+}
+.section4 p:first-child img{
+    width: 87%;
+}
+.section4 .appAll{
+    position: absolute;
+    top: 30%; left: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section4 .appInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section4 .appInfo img{
+    width: 130px;
+}
+.section4 .appInfo h2{
+    margin-top: 20px;
+    font: 40px/40px 'jalnan',sans-serif;
+    color: #FA2828;
+}
+.section4 .appInfo p{
+    margin-top: 10px;
+    font: 26px 'GothicA1',sans-serif;
+}
+.section4 .btnApp{
+    margin: 60px 0;
+}
+.section4 .btnApp img{
+    margin: 40px 10px;
+    width: 230px;
+}
+
+/* footer */
+.footer-wrap{
+    background-color: #605747;
+    
+}
+.footer-wrap .footer{
+    height: 379px;
+}
