@@ -1,31 +1,52 @@
 
-/* header */
+/*********** header ***********/
 .header{
     position: fixed;
     z-index: 9;
 }
-.header img{
+.header a img{
     position: absolute;
     top: 35px; left: 60px;
     height: 38px;
 }
-
-/* nav */
-.nav-wrap{
+.header .btnMenu{
     position: absolute;
-    left: 1400px; top: 0;
+    top: 35px; left: 1850px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+/*********** nav ***********/
+.nav-wrap{
+    background: rgb(223, 223, 223, 0.8);
+    width: 100vw; height: 100vh;
+}
+.nav-wrap .active{
+    display: block;
+}
+.nav-wrap .btnClose{
+    position: absolute;
+    z-index: 99;
+    top: 35px; left: 96%;
+    width: 37px;
+    cursor: pointer;
+}
+.nav-wrap .navMenu{
+    position: absolute;
+    right: 0; top: 0;
     background: rgb(0, 0, 0, 0.7);
     width: 547px; height: 100vh;
 }
-.nav-wrap img{
+.navMenu>li{
     position: absolute;
-    right: 100px;
+    top: 178px;
 }
-
-.nav-wrap ul li a{
+.nav-wrap .navMenu li a{
     font: 36px 'Cafe24 Ssurround',sans-serif;
 }
-.nav-wrap ul li ul li a{
+.nav-wrap .navMenu li ul li a{
     margin-left: 40px;
     font: 30px 'Cafe24 Ssurround air',sans-serif;
 }
@@ -33,7 +54,9 @@
     color: #FFB300;
 }
 
-/* section1 */
+
+
+/*********** section1 ***********/
 .section1{
 
 }
@@ -51,15 +74,16 @@
 }
 .section1 .magLt .title p:first-child{
     display: inline;
-    font: 72px 'Gothic',sans-serif;
+    font: 72px 'Gothic A1',sans-serif;
+    font-weight: bold;
 }
 .section1 .magLt .title p:nth-child(2){
     display: inline;
-    font: 72px 'Gothic',sans-serif;
+    font: 72px 'Gothic A1',sans-serif;
 }
 .section1 .magLt .title p:last-child{
     margin-top: 20px;
-    font: 36px 'Gothic',sans-serif;
+    font: 36px 'Gothic A1',sans-serif;
 }
 
 .section1 .magLt div:last-child{
@@ -69,7 +93,7 @@
 }
 .section1 .magLt div:last-child p{
     margin-left: 15px;
-    font: 24px/34px 'Gothic',sans-serif;
+    font: 24px/34px 'Gothic A1',sans-serif;
 }
 
 .section1 .magazine{
@@ -90,6 +114,7 @@
 }
 .section1 .magRt h1{
     font: 144px/220px 'jalnan',sans-serif;
+    font-weight: bold;
     color: #FFB300;
 }
 
@@ -98,25 +123,39 @@
     
 }
 
-/* section2 */
+
+
+/*********** section2 ***********/
 .section2{
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
-.section2 img:nth-child(1){
-    width: 84px;
-    align-items: center;
+.section2 .koBig{
+    position: absolute;
+    top: calc(50% - 400px); left: 61px;
+    width: 78px; height: 708px;
+}
+
+.section2 div{
+    position: absolute;
+    top: calc(50% - 400px); right: 0;
 }
 .section2 div img{
-    width: 1769px;
+    width: 1769px; height: 589px;
+}
+.section2 div p{
+    padding-top: 47px;
+    font: 24px/30px 'Gothic A1',sans-serif;
 }
 
 /* section3 */
-.section3{
-    background: url(./imgs/main3_bg.png) 0 0 no-repeat;
+.section3>img{
+    position: fixed;
+    width: 100vw; height: 100vh;
 }
 
-/* section4 */
+
+
+/*********** section4 ***********/
 .section4{
     position: relative;
 }
@@ -141,6 +180,7 @@
 .section4 .appInfo h2{
     margin-top: 20px;
     font: 40px/40px 'jalnan',sans-serif;
+    font-weight: bold;
     color: #FA2828;
 }
 .section4 .appInfo p{
@@ -155,11 +195,64 @@
     width: 230px;
 }
 
-/* footer */
+
+
+/********** footer ***********/
 .footer-wrap{
     background-color: #605747;
     
 }
 .footer-wrap .footer{
     height: 379px;
+}
+
+.footer p:first-child{
+    position: absolute;
+    top: 63px; left: 100px;
+    font: 18px/22px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .koInfo{
+    display: flex;
+    position: absolute;
+    top: 140px; left: 100px;
+}
+
+
+.footer .cs{
+}
+.footer .cs h2{
+    font: 18px/22px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .cs p:nth-child(2){
+    margin-top: 20px;
+    font: 24px/30px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .cs p:last-child{
+    margin-top: 26px;
+    font: 18px/25px 'Gothic A1',sans-serif;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.footer .about{
+    margin-left: 71px;
+    padding-left: 50px;
+    border-left: 2px solid #848484;
+}
+.footer .about h2{
+    font: 18px/22px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .about p{
+    margin-top: 43px;
+    font: 18px/25px 'Gothic A1',sans-serif;
+    font-weight: lighter;
+    color: #fff;
 }
