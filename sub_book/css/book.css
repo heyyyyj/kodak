@@ -128,6 +128,35 @@ main h1{
     font: 50px 'Cafe24 Ssurround',sans-serif;
 }
 
+.insta{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.insta h2 img{
+    margin-top: 50px;
+    width: 180px
+}
+.insta p{
+    margin: 5px 0 30px 0;
+    font: 20px/24px 'Gothic A1',sans-serif;
+    color: #333;
+}
+
+.instaPhoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.instaPhoto p{
+}
+.instaPhoto p img{
+    width: 380px;
+}
+
 
 /* ------------footer------------ */
 
