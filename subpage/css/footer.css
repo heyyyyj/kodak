@@ -1,0 +1,70 @@
+/* ------------footer------------ */
+
+footer{
+    position: relative;
+    background: #605747;
+    height: 300px;
+}
+.footer-wrap{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.coInfo{
+    position: absolute;
+    top: 40px;
+    display: flex;
+}
+.coInfo a{
+    font: 16px/22px 'Gothic A1',sans-serif;
+    color: #eee;
+}
+.coInfo p:nth-of-type(1) a{margin-right: 10px;}
+.coInfo p:nth-of-type(2) a{margin: 0 10px;}
+.coInfo p:nth-of-type(3) a{margin-left: 10px;}
+
+.coInfo p:not(:nth-of-type(1)){
+    border-left: 2px solid #eee;
+}
+
+.infoSub{
+    display: flex;
+    position: absolute;
+    top: 100px;
+}
+
+.cs h2{
+    font: 16px/20px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #eee;
+}
+.cs p:nth-child(2){
+    margin-top: 10px;
+    font: 20px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #eee;
+}
+.cs p:last-child{
+    margin-top: 26px;
+    font: 16px/24px 'Gothic A1',sans-serif;
+    font-weight: lighter;
+    color: #eee;
+}
+
+
+.about{
+    margin-left: 40px;
+    padding-left: 40px;
+    border-left: 2px solid #848484;
+}
+.about h2{
+    font: 16px/20px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #eee;
+}
+.about p{
+    margin-top: 40px;
+    font: 16px/24px 'Gothic A1',sans-serif;
+    font-weight: lighter;
+    color: #eee;
+}
