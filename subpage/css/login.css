@@ -1,3 +1,6 @@
+a{
+    color: #333;
+}
 
 /* ------------login------------ */
 
@@ -83,20 +86,24 @@ main h1{
 .memLog span{
     padding: 0 5px;
 }
-.memLog div:last-child div{
+.logFin{
     display: flex;
     justify-content: space-between;
+    margin: -90px auto 0 auto;
+    width: 495px;
 }
-.memLog div:last-child div button{
+.logFin button{
     width: 150px; height: 43px;
     background: none;
     border: 2px solid #ffb300;
     color: #333;
-    cursor: pointer;
 }
-.memLog div:last-child div button:first-child{
+.logFin button:first-child{
     background: #ffb300;
     color: #fff;
+}
+.logFin button a{
+    padding: 10px 20px;
 }
 
 
