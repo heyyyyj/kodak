@@ -1,0 +1,130 @@
+
+/* ------------login------------ */
+
+main{
+    margin: 70px 0 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1{
+    font: 50px 'Cafe24 Ssurround',sans-serif;
+}
+
+
+
+.login_bg1{
+    position: relative;
+    margin-top: 50px;
+    background: #f8f8f8;
+    width: 625px; height: 895px;
+    box-shadow: 6px 6px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.login_bg1 p{
+    position: absolute;
+    top: 700px; left: -45px;
+    font: 14px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    transform: rotate(-90deg);
+}
+.login_bg2{
+    margin: 40px auto 0 auto;
+    background: #FFFFFF;
+    width: 548px;
+    height: 751px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+}
+.login legend{
+    font: 18px 'Cafe24 Ssurround air',sans-serif;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 10px;
+}
+.login form{
+    margin: 0 auto;
+    width: 495px;
+}
+
+.memLog{
+    width: 495px;
+}
+.memLog div{}
+.logBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logBox div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 111px;
+}
+.logBox div input{
+    width: 332px; height: 44px;
+}
+.logBox>input{
+    width: 144px; height: 111px;
+    font: 26px 'Cafe24 Ssurround',sans-serif;
+    color: #fff;
+    background: #ffb300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.check{
+    margin: 20px 0;
+}
+.memLog span{
+    padding: 0 5px;
+}
+.memLog div:last-child div{
+    display: flex;
+    justify-content: space-between;
+}
+.memLog div:last-child div button{
+    width: 150px; height: 43px;
+    background: none;
+    border: 2px solid #ffb300;
+    color: #333;
+    cursor: pointer;
+}
+.memLog div:last-child div button:first-child{
+    background: #ffb300;
+    color: #fff;
+}
+
+
+
+.snsLog{}
+.snsLog div{
+    display: flex;
+    justify-content: space-between;
+}
+.snsLog div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px 'Cafe24 Ssurround air',sans-serif;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 238px; height: 42px;
+    cursor: pointer;
+}
+.snsLog div button img{
+    width: 28px;height: 26px;
+    padding: 5px;
+}
+
+
+
+.noMem .logBox>input{
+    background: rgba(51, 51, 51, 0.6);
+}
+

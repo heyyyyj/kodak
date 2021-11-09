@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KODAK Photoprinter/event</title>
+    <title>KODAK Photoprinter/login</title>
     <link rel="icon" href="./imgs/favicon.ico">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <header>
@@ -46,28 +46,58 @@
     </header>
 
     <main>
-        <h1>EVENT</h1>
-        <section class="event">
-            <ul class="eventList">
-                <li><a href="#">
-                    <img src="imgs/event01.jpg" alt="할로윈">
-                    <img src="imgs/event01-1.jpg" alt="할로윈">
-                </a></li>
-                <li><a href="#">
-                    <img src="imgs/event02.jpg" alt="단어찾기">
-                    <img src="imgs/event02-1.jpg" alt="단어찾기">
-                </a></li>
-                <li><a href="#">
-                    <img src="imgs/event03.jfif" alt="발렌타인">
-                    <img src="imgs/event03-1.png" alt="발렌타인">
-                </a></li>
-                <li><a href="#">
-                    <img src="imgs/event04.jfif" alt="집콕">
-                    <img src="imgs/event04-1.png" alt="집콕">
-                </a></li>
-            </ul>     
+        <h1>LOGIN</h1>
+        <section class="login_bg1">
+            <p>kodak film　200-8</p>
+            <section class="login_bg2">
+                <div class="login">
+
+
+
+                    <form action="" method="" name="" class="memLog">
+                        <legend>회원 로그인</legend>
+                        <div>
+                            <div class="logBox">
+                                <div>
+                                    <input type="text" name="id" placeholder="아이디" maxlength="10" required>
+                                    <input type="password" name="pw" placeholder="비밀번호" minlength="6" required>
+                                </div>
+                                <input type="submit" value="로그인">
+                            </div>
+                            <input type="checkbox" class="check"><span>아이디저장</span>
+                            <div>
+                                <button>회원가입</button>
+                                <button>아이디 찾기</button>
+                                <button>비밀번호 찾기</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <form action="" method="" name="" class="snsLog">
+                        <legend>sns 아이디로 로그인</legend>
+                        <div>
+                            <button><img src="imgs/sns_n.png" alt="">네이버 아이디로 로그인</button>
+                            <button><img src="imgs/sns_c.png" alt="">카카오 아이디로 로그인</button>
+                        </div>
+                    </form>
+
+
+                    <form action="" method="" name="" class="noMem">
+                        <legend>비회원 주문조회</legend>
+                        <div class="logBox">
+                            <div>
+                                <input type="text" placeholder="주문자명"required>
+                                <input type="text" placeholder="주문번호" minlength="6" required>
+                            </div>
+                            <input type="submit" value="확인">
+                        </div>
+                    </form>
+
+
+                </div>
+            </section>
         </section>
-        <p><a href="#">+ 더보기</a></p>
     </main>
 
     <footer>

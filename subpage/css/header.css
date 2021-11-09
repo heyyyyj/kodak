@@ -57,16 +57,16 @@ header{
     align-items: center;
 }
 
-button{
+.navIcons button{
     background: none;
     border: none;
 }
-button img{
+.navIcons button img{
     width: 30px;
     cursor: pointer;
 }
 
-form{
+#srchBox{
     display: none; /* flex로 열어주기 */
     position: absolute;
     top: 46px; right: 0;
