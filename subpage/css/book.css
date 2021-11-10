@@ -8,7 +8,8 @@ main{
     align-items: center;
 }
 main h1{
-    font: 50px 'Cafe24 Ssurround',sans-serif;
+    font-family: 'Cafe24Ssurround';
+    font-size: 50px;
 }
 
 .insta{

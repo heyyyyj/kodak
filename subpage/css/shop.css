@@ -10,7 +10,8 @@ main{
     align-items: center;
 }
 main h1{
-    font: 50px 'Cafe24 Ssurround',sans-serif;
+    font-family: 'Cafe24Ssurround';
+    font-size: 50px;
 }
 
 
@@ -56,14 +57,16 @@ main h1{
     align-items: flex-end;
 }
 .contents span{
-    font: 18px 'Cafe24 Ssurround air';
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 18px;
     color: #333;
     margin: 0 10px;
 }
 
 .contents div div:nth-of-type(2){
     margin-top: 40px;
-    font: 22px 'Cafe24 Ssurround air';
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 22px;
     color: #333;
 }
 .contents div div:nth-of-type(2) p{

@@ -11,7 +11,8 @@ main{
     align-items: center;
 }
 main h1{
-    font: 50px 'Cafe24 Ssurround',sans-serif;
+    font-family: 'Cafe24Ssurround';
+    font-size: 50px;
 }
 
 
@@ -44,7 +45,8 @@ main h1{
     height: 700px;
 }
 .login legend{
-    font: 18px 'Cafe24 Ssurround air',sans-serif;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 18px;
     color: rgba(51, 51, 51, 1);
     margin-bottom: 10px;
 }
@@ -73,7 +75,8 @@ main h1{
 }
 .logBox>input{
     width: 144px; height: 111px;
-    font: 26px 'Cafe24 Ssurround',sans-serif;
+    font-family: 'Cafe24Ssurround';
+    font-size: 26px;
     color: #fff;
     background: #ffb300;
     border: none;
@@ -117,7 +120,9 @@ main h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font: 16px 'Cafe24 Ssurround air',sans-serif;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 16px;
+    color: #333;
     background: none;
     border: 1px solid #333;
     border-radius: 4px;

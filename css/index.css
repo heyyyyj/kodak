@@ -45,11 +45,13 @@
     top: 178px;
 }
 .nav-wrap .navMenu li a{
-    font: 36px 'Cafe24 Ssurround',sans-serif;
+    font-family: 'Cafe24Ssurround';
+    font-size: 36px;
 }
 .nav-wrap .navMenu li ul li a{
     margin-left: 40px;
-    font: 30px 'Cafe24 Ssurround air',sans-serif;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 30px;
 }
 .nav-wrap a{
     color: #FFB300;
@@ -121,7 +123,8 @@
 }
 .layout1 .magRt h1{
     padding: 1vw;
-    font: 9vw 'jalnan',sans-serif;
+    font-family: 'yg-jalnan';
+    font-size: 9vw;
     font-weight: bold;
     color: #FFB300;
 }
@@ -191,7 +194,8 @@
 }
 .section4 .appInfo h2{
     margin-top: 20px;
-    font: 40px/40px 'jalnan',sans-serif;
+    font-family: 'yg-jalnan';
+    font-size: 40px;
     font-weight: bold;
     color: #FA2828;
 }
