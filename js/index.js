@@ -31,7 +31,7 @@ $(function(){
     
 
     
-
+/*
     //네비게이터 클릭 이벤트
 
     $("nav").children("ul").children("li").click(function(e){
@@ -49,7 +49,7 @@ $(function(){
         moveBox();
 
     });
-
+*/
     
 
     
