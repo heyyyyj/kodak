@@ -1,0 +1,274 @@
+
+/*********** header ***********/
+.header{
+    position: fixed;
+    z-index: 9;
+}
+.header a img{
+    position: absolute;
+    top: 3vw; left: 3vw;
+    width: 17vw;
+}
+.header .btnMenu{
+    position: absolute;
+    top: 35px; left: 1850px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+/*********** nav ***********/
+.nav-wrap{
+    display: none;
+    background: rgb(223, 223, 223, 0.8);
+    width: 100vw; height: 100vh;
+}
+.nav-wrap .active{
+    display: block;
+}
+.nav-wrap .btnClose{
+    position: absolute;
+    z-index: 99;
+    top: 35px; left: 96%;
+    width: 37px;
+    cursor: pointer;
+}
+.nav-wrap .navMenu{
+    position: absolute;
+    right: 0; top: 0;
+    background: rgb(0, 0, 0, 0.7);
+    width: 547px; height: 100vh;
+}
+.navMenu>li{
+    position: absolute;
+    top: 178px;
+}
+.nav-wrap .navMenu li a{
+    font-family: 'Cafe24Ssurround';
+    font-size: 36px;
+}
+.nav-wrap .navMenu li ul li a{
+    margin-left: 40px;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 30px;
+}
+.nav-wrap a{
+    color: #FFB300;
+}
+
+
+
+/*********** layout1 ***********/
+.layout1{
+    display: flex;
+    height: 100vh;
+}
+/* 첫번째 섹션 좌측 컨텐츠 */
+.layout1 .magLt{
+    flex:1 0 53%;
+    position: relative;
+    height: 100vh;
+}
+.layout1 .magLt .title{
+    position: absolute;
+    top: 12%; left: 5vw;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    width: 40vw; height: 12vw;
+}
+.layout1 .magLt .title p:first-child{
+    display: inline;
+    font: 5vw 'Gothic A1',sans-serif;
+    font-weight: bold;
+}
+.layout1 .magLt .title p:nth-child(2){
+    display: inline;
+    font: 5vw 'Gothic A1',sans-serif;
+}
+.layout1 .magLt .title p:last-child{
+    margin-top: 1vw;
+    font: 2.3vw 'Gothic A1',sans-serif;
+}
+
+.layout1 .magLt div:nth-of-type(2){
+    position: absolute;
+    bottom: 5vw; left: 6%;
+    border-left: 6px solid #333;
+}
+.layout1 .magLt div:nth-of-type(2) p{
+    margin-left: 15px;
+    font: 2vw/3vw 'Gothic A1',sans-serif;
+}
+.layout1 .magLt>p{
+    position: absolute;
+    transform: rotate(-90deg);
+}
+/* 세로 이미지 */
+.layout1 .magazine{
+    position: absolute;
+    bottom: 5vw; right: 5%;
+    height: 13vw;
+}
+
+/* 첫번째 섹션 우측 컨텐츠 */
+.layout1 .magRt{
+    flex:1 0 47%;
+    height: 100vh;
+    background-color: #EAA0A0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.layout1 .magRt h1{
+    padding: 1vw;
+    font-family: 'yg-jalnan';
+    font-size: 9vw;
+    font-weight: bold;
+    color: #FFB300;
+}
+
+.layout1 .magRt img{
+    width: 70%;
+    
+}
+
+
+
+/*********** section2 ***********/
+.section2{
+}
+.section2 .koBig{
+    position: absolute;
+    left: 4vw;
+    width: 4vw; height: 40vw;
+}
+
+.section2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+.section2 div img{
+    position: absolute;
+    right: 0;
+    width: 90vw;
+}
+.section2 div p{
+    padding-top: 47px;
+    font: 2vw 'Gothic A1',sans-serif;
+}
+
+/* section3 */
+.section3>img{
+    position: fixed;
+    width: 100vw; height: 100vh;
+}
+
+
+
+/*********** section4 ***********/
+.section4{
+    position: relative;
+}
+.section4 p:first-child img{
+    width: 87%;
+}
+.section4 .appAll{
+    position: absolute;
+    top: 30%; left: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section4 .appInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section4 .appInfo img{
+    width: 130px;
+}
+.section4 .appInfo h2{
+    margin-top: 20px;
+    font-family: 'yg-jalnan';
+    font-size: 40px;
+    font-weight: bold;
+    color: #FA2828;
+}
+.section4 .appInfo p{
+    margin-top: 10px;
+    font: 26px 'GothicA1',sans-serif;
+}
+.section4 .btnApp{
+    margin: 60px 0;
+}
+.section4 .btnApp img{
+    margin: 40px 10px;
+    width: 230px;
+}
+
+
+
+/********** footer ***********/
+.footer-wrap{
+    background-color: #605747;
+    
+}
+.footer-wrap .footer{
+    height: 379px;
+}
+
+.footer p:first-child{
+    position: absolute;
+    top: 63px; left: 100px;
+    font: 18px/22px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .koInfo{
+    display: flex;
+    position: absolute;
+    top: 140px; left: 100px;
+}
+
+
+.footer .cs{
+}
+.footer .cs h2{
+    font: 18px/22px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .cs p:nth-child(2){
+    margin-top: 20px;
+    font: 24px/30px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .cs p:last-child{
+    margin-top: 26px;
+    font: 18px/25px 'Gothic A1',sans-serif;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.footer .about{
+    margin-left: 71px;
+    padding-left: 50px;
+    border-left: 2px solid #848484;
+}
+.footer .about h2{
+    font: 18px/22px 'Gothic A1',sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.footer .about p{
+    margin-top: 43px;
+    font: 18px/25px 'Gothic A1',sans-serif;
+    font-weight: lighter;
+    color: #fff;
+}
