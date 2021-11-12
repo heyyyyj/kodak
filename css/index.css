@@ -1,117 +1,63 @@
+
 html,body{
 
     height:100%;
-
+    min-height: 534px;
+    min-width: 892px;
 }    
 
 /* 각 브라우저별 스크롤바 없애기*/
-
-body::-webkit-scrollbar {
-
-    display:none;
-
-}
-
-body::-moz-scrollbar {
-
-    display:none;
-
-}
-
-body::-o-scrollbar {
-
-    display:none;
-
-}
-
-body::-ms-scrollbar {
-
-    display:none;
-
-}
+body::-webkit-scrollbar {display:none;}
+body::-moz-scrollbar {display:none;}
+body::-o-scrollbar {display:none;}
+body::-ms-scrollbar {display:none;}
 
 
 
+/********************* 헤더 *********************/
 header{
     z-index: 9;
     display:flex;
-
-    justify-content: space-between; /*양쪽 정렬*/
-
-    align-items: flex-end; /*새로로 container 하단에 붙도록 한다.*/
-
-    position:fixed; 
-
-    left:0; top:0; 
-
+    justify-content: space-between;
+    align-items: flex-end;
+    position:fixed;
+    left:0; top:0;
     width:100%;
-
     background: #fff;
-    
     box-shadow: 0 2px 5px rgba(80,80,80,.2);
 }
 
-
-
 header>h1{
-
     flex:0 0 20vh; /*200(로고) + nav의 크기(1000)를 제외한 여유공간의 값을 전혀 가져가지 않는다. 즉, 여유공간이 있어도 커지지도 않고 작아지지도 않는다.*/
-
     margin: 0 0 1vh 10vh;
 }
 
 header>nav{
-
-    flex:0 0 1000px; /*200(로고) + nav의 크기(1000)를 제외한 여유공간의 값을 전혀 가져가지 않는다. 즉, 여유공간이 있어도 커지지도 않고 작아지지도 않는다.*/
-
-    height:50px;
-
+    flex:0 0 100vh; /*200(로고) + nav의 크기(1000)를 제외한 여유공간의 값을 전혀 가져가지 않는다. 즉, 여유공간이 있어도 커지지도 않고 작아지지도 않는다.*/
+    height:5vh;
 }
-
 header>nav>ul{
-
     display: flex;
-
-    height:50px;
-
+    height:5vh;
 }
-
 header>nav>ul>li{
-
     flex:1 1 auto;
-
-
 }
 header>nav>ul>li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:5vh;
     font-family: 'Cafe24Ssurroundair';
-    font-size: 16px;
+    font-size: 1.6vh;
     font-weight: bold;
     color: #333;
 }
 
+/* nav 이벤트 */
 header>nav>ul>li:hover{
-
     border-bottom: 3px solid #333;
-
 }
-
-header>nav>ul>li:nth-child(odd){
-
-
-}
-
-header>nav>ul>li>a{
-
-    display: flex; /*a 요소 내부에 있는 글자를 가운데 보내기 위한 방편*/
-
-    justify-content: center;
-
-    align-items: center;
-
-    height:50px;
-
-}
-
 
 
 
@@ -121,55 +67,56 @@ header>nav>ul>li>a{
 
 /********************* 본문 *********************/
 
-/********************* 첫번째 section *********************/
 
+/* 첫번째 section */
 section{
     box-sizing:border-box; 
     height:100%;
-
 }
-section>.mag{
+.mag{
     display: flex;
     height: 100vh;
 }
 
 /* 첫번째 section 왼쪽 */
 
-section>.mag>.magLt{
+.magLt{
     flex: 1 0 53%;
     position: relative;
     height: 100vh;
 }
-section>.mag>.magLt>.magTitle{
+.magTitle{
     position: absolute;
     top: 12%; left: 5vw;
     border-top: 3px solid #333;
     border-bottom: 3px solid #333;
     width: 40vw; height: 12vw;
 }
-section>.mag>.magLt>.magTitle>p:first-child{
+.magTitle>p:nth-child(1){
     display: inline;
     font: 5vw sans-serif;
     font-weight: bold;
 }
-section>.mag>.magLt>.magTitle>p:nth-child(2){
+.magTitle>p:nth-child(2){
     display: inline;
     font: 5vw sans-serif;
 }
-section>.mag>.magLt>.magTitle>p:last-child{
+.magTitle>p:nth-child(3){
     margin-top: 1vw;
     font: 2.3vw sans-serif;
 }
-section>.mag>.magLt>div:nth-of-type(2){
+
+.magLt>div:nth-of-type(2){
     position: absolute;
     bottom: 2vw; left: 5vw;
     border-left: 6px solid #333;
 }
-section>.mag>.magLt>div:nth-of-type(2) p{
+.magLt>div:nth-of-type(2) p{
     margin-left: 15px;
     font: 1.6vw/2.5vw sans-serif;
 }
-section>.mag>.magLt>img{
+
+.magLt>img{
     position: absolute;
     bottom: 2vw; right: 2%;
     height: 13vw;
@@ -177,7 +124,7 @@ section>.mag>.magLt>img{
 
 /* 첫번째 section 오른쪽 */
 
-section>.mag>.magRt{
+.magRt{
     flex: 1 0 47%;
     height: 100vh;
     background-color: #eaa0a0;
@@ -186,19 +133,20 @@ section>.mag>.magRt{
     justify-content: center;
     align-items: center;
 }
-section>.mag>.magRt>h1{
+.magRt>h1{
     padding: 2vw;
     font-family: 'yg-jalnan';
     font-size: 8vw;
     font-weight: bold;
     color: #ffb300;
 }
-section>.mag>.magRt>img{
+.magRt>img{
     width: 65%;
 }
 
 
-/********************* 두번째 section *********************/
+/* 두번째 section */
+
 .box2{
     position: relative;
 }
@@ -209,32 +157,31 @@ section>.mag>.magRt>img{
     justify-content: space-between;
     height: 100vh; width: 100vw;
 }
-section>.film>img{
-    padding-left: 80px;
+.film>img{
+    padding-left: 8vh;
     width: 4vw; height: 40vw;
 }
-section>.film>div{
+.film>div{
     display: flex;
     flex-direction: column;
 }
-section>.film>div>img{
+.film>div>img{
     width: 90vw;
 }
-section>.film>div>p{
+.film>div>p{
     padding-top: 2vw;
     font: 1.5vw sans-serif;
 }
 
 
-/********************* 세번째 section *********************/
+/* 세번째 section */
 
 .box3{
     position: relative;
     background: url(../imgs/main3_bg.png) 0 100% no-repeat ;
     background-size: cover;
 }
-.box>div{
-}
+
 .box3 img{
     margin: 30% auto;
     width: 60vh; height: 60vh;
@@ -264,23 +211,20 @@ section>.film>div>p{
 .box3 button:nth-child(1)::before{content: "\e93b";}
 .box3 button:nth-of-type(2)::before{content: "\e93e";}
 
-/********************* 네번째 section *********************/
+/* 네번째 section */
 
 .box4{
     position: relative;
 }
-section>.app{
+.app{
     display: flex;
     align-items: center;
     height: 100%;
 }
-section>.app>p{
-    
-}
-section>.app>img{
+.app>img{
     width: 90%;
 }
-section>.app>.appBg{
+.appBg{
     position: absolute;
     left: 53%;
     display: flex;
@@ -288,107 +232,101 @@ section>.app>.appBg{
     justify-content: center;
     align-items: center;
 }
-section>.app>.appBg>.appInfo{
+.appInfo{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section>.app>.appBg>.appInfo>img{
+.appInfo>img{
     width: 15vh;
 }
-section>.app>.appBg>.appInfo>h2{
+.appInfo>h2{
     margin-top: 2vh;
     font-family: 'yg-jalnan';
     font-size: 4vh;
     color: #fa2828;
 }
-section>.app>.appBg>.appInfo>p{
+.appInfo>p{
     font: 2.5vh sans-serif;
     line-height: 8vh;
-    text-shadow: rgba(200,200,200,0.5);
     color: #333;
 }
-section>.app>.appBg>.appBtn{
-
-}
-section>.app>.appBg>.appBtn>a{
-}
-section>.app>.appBg>.appBtn>a>img{
+.appBtn>a>img{
     margin: 5vh 1vh 0 1vh;
     width: 25vh;
 }
 
 
-/********************* 다섯번째 section *********************/
+/* 다섯번째 section */
 
 .box5{
     position: relative;
     height: 35vh;
     background: #605747;
 }
-section>.footer{
+.footer{
     padding: 5vh 0 0 10vh;
     width: 180vh;
     display: flex;
     flex-direction: column;
 }
-section>.footer>.footerTop{
+.footerTop{
     display: flex;
 }
-section>.footer>.footerTop>p:not(:nth-of-type(1)){
+.footerTop>p:not(:nth-of-type(1)){
     border-left: 2px solid #eee;
 }
-section>.footer>.footerTop>p:nth-of-type(2){
+.footerTop>p:nth-of-type(2){
     margin: 0 1vh 0 1vh;
 }
-section>.footer>.footerTop>p>a{
+.footerTop>p>a{
     font: 1.6vh sans-serif;
     color: #eee;
 }
-section>.footer>.footerTop>p:not(:nth-of-type(1))>a{
+.footerTop>p:not(:nth-of-type(1))>a{
     margin-left: 1vh;
 }
 
 .footerSub{
     margin-top: 4vh;
     display: flex;
-    
 }
 
-.footerSub>.cs{
-
-}
-.footerSub>.cs>h2{
+.cs>h2{
     font: 1.8vh/2.2vh sans-serif;
     font-weight: bold;
     color: #eee;
 }
-.footerSub>.cs>p:nth-child(2){
+.cs>p:nth-child(2){
     margin-top: 1.8vh;
     font: 2.4vh/3vh sans-serif;
     font-weight: bold;
     color: #eee;
 }
-.footerSub>.cs>p:last-child{
+.cs>p:last-child{
     margin-top: 1.8vh;
     font: 1.6vh/2.5vh sans-serif;
     font-weight: lighter;
     color: #eee;
 }
-.footerSub>.about{
+.about{
     margin-left: 7vh;
     padding-left: 5vh;
     border-left: 2px solid#848484;
     height: 18vh;
 }
-.footerSub>.about>h2{
+.about>h2{
     font: 1.8vh/3.3vh sans-serif;
     font-weight: bold;
     color: #eee;
 }
-.footerSub>.about>p{
+.about>p{
     margin-top: 4.3vh;
     font: 1.6vh/2.5vh sans-serif;
     font-weight: lighter;
     color: #eee;
+}
+.footerSub img{
+    margin-left: 1vh;
+    height: 1.5vh;
 }
