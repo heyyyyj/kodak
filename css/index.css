@@ -47,6 +47,8 @@ header{
     width:100%;
 
     background: #fff;
+    
+    box-shadow: 0 2px 5px rgba(80,80,80,.2);
 }
 
 
@@ -54,7 +56,8 @@ header{
 header>h1{
 
     flex:0 0 200px; /*200(로고) + nav의 크기(1000)를 제외한 여유공간의 값을 전혀 가져가지 않는다. 즉, 여유공간이 있어도 커지지도 않고 작아지지도 않는다.*/
-    margin-left: 10vh;
+
+    margin: 0 0 1vh 10vh;
 }
 
 header>nav{
@@ -80,7 +83,9 @@ header>nav>ul>li{
 
 }
 header>nav>ul>li>a{
-    font-family: 'Cafe24Ssurround';
+    font-family: 'Cafe24Ssurroundair';
+    font-size: 16px;
+    font-weight: bold;
     color: #333;
 }
 
@@ -166,7 +171,7 @@ section>.mag>.magLt>div:nth-of-type(2) p{
 }
 section>.mag>.magLt>img{
     position: absolute;
-    bottom: 2vw; right: 5%;
+    bottom: 2vw; right: 2%;
     height: 13vw;
 }
 
@@ -222,9 +227,43 @@ section>.film>div>p{
 
 
 /********************* 세번째 section *********************/
+
 .box3{
     position: relative;
+    background: url(../imgs/main3_bg.png) 0 100% no-repeat ;
+    background-size: cover;
 }
+.box>div{
+}
+.box3 img{
+    margin: 30% auto;
+    width: 60vh; height: 60vh;
+}
+.box3 button{
+    border: none;
+    background: none;
+    font-size: 0;
+    color: transparent;
+}
+.box3 button:nth-child(1){
+    position: absolute;
+    top: 50%; left: 0;
+    z-index: 8;
+}
+.box3 button:nth-of-type(2){
+    position: absolute;
+    top: 50%; right: 0;
+}
+
+.box3 button::before{
+    font-family: 'xeicon';
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 5vh;
+    cursor: pointer;
+}
+.box3 button:nth-child(1)::before{content: "\e93b";}
+.box3 button:nth-of-type(2)::before{content: "\e93e";}
+
 /********************* 네번째 section *********************/
 
 .box4{
@@ -284,13 +323,12 @@ section>.app>.appBg>.appBtn>a>img{
 
 .box5{
     position: relative;
-    height: 40vh;
+    height: 35vh;
     background: #605747;
 }
 section>.footer{
-    margin: 0 auto;
-    padding-top: 5vh;
-    width: 90%;
+    padding: 5vh 0 0 10vh;
+    width: 180vh;
     display: flex;
     flex-direction: column;
 }
@@ -301,17 +339,18 @@ section>.footer>.footerTop>p:not(:nth-of-type(1)){
     border-left: 2px solid #eee;
 }
 section>.footer>.footerTop>p:nth-of-type(2){
-    margin: 0 10px 0 10px;
+    margin: 0 1vh 0 1vh;
 }
 section>.footer>.footerTop>p>a{
+    font: 1.6vh sans-serif;
     color: #eee;
 }
 section>.footer>.footerTop>p:not(:nth-of-type(1))>a{
-    margin-left: 10px;
+    margin-left: 1vh;
 }
 
 .footerSub{
-    margin-top: 30px;
+    margin-top: 4vh;
     display: flex;
     
 }
@@ -320,36 +359,36 @@ section>.footer>.footerTop>p:not(:nth-of-type(1))>a{
 
 }
 .footerSub>.cs>h2{
-    font: 18px/22px sans-serif;
+    font: 1.8vh/2.2vh sans-serif;
     font-weight: bold;
     color: #eee;
 }
 .footerSub>.cs>p:nth-child(2){
-    margin-top: 18px;
-    font: 24px/30px sans-serif;
+    margin-top: 1.8vh;
+    font: 2.4vh/3vh sans-serif;
     font-weight: bold;
     color: #eee;
 }
 .footerSub>.cs>p:last-child{
-    margin-top: 18px;
-    font: 16px/25px sans-serif;
+    margin-top: 1.8vh;
+    font: 1.6vh/2.5vh sans-serif;
     font-weight: lighter;
     color: #eee;
 }
 .footerSub>.about{
-    margin-left: 71px;
-    padding-left: 50px;
+    margin-left: 7vh;
+    padding-left: 5vh;
     border-left: 2px solid#848484;
-    height: 20vh;
+    height: 18vh;
 }
 .footerSub>.about>h2{
-    font: 18px/22px sans-serif;
+    font: 1.8vh/3.3vh sans-serif;
     font-weight: bold;
     color: #eee;
 }
 .footerSub>.about>p{
-    margin-top: 43px;
-    font: 16px/25px sans-serif;
+    margin-top: 4.3vh;
+    font: 1.6vh/2.5vh sans-serif;
     font-weight: lighter;
     color: #eee;
 }

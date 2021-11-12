@@ -269,6 +269,12 @@ $(function(){
             .siblings().removeClass("on");
 
     }//lightNow 함수 끝
+    $('.box3').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1800,
+      });
 
 
 
