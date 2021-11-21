@@ -2,8 +2,6 @@
 html,body{
 
     height:100%;
-    min-height: 534px;
-    min-width: 892px;
 }    
 
 /* 각 브라우저별 스크롤바 없애기*/
